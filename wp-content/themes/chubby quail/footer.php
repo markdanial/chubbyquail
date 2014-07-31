@@ -1,5 +1,9 @@
+					<!-- wrapper end-->	
+					</div>
+				<!-- page-wrap end-->	
+				</div>
 			<!-- footer -->
-			<footer class="footer" role="contentinfo">
+			<footer class="site-footer" role="contentinfo">
 
 				<!-- copyright -->
 				<p class="copyright">
@@ -9,10 +13,7 @@
 
 			</footer>
 			<!-- /footer -->
-
-		</div>
-		<!-- /wrapper -->
-
+		
 		<?php wp_footer(); ?>
 
 		<!-- analytics -->

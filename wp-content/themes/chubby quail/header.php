@@ -25,25 +25,26 @@
 	</head>
 	<body <?php body_class(); ?>>
 
-		<!-- wrapper -->
-		<div class="wrapper">
+			<!-- page-wrap for sticky footer-->
+			<div class="page-wrap">
+				<!-- wrapper -->
+				<div class="wrapper">
+				<!-- header -->
+				<header class="header clear" role="banner">
 
-			<!-- header -->
-			<header class="header clear" role="banner">
+						<!-- logo -->
+						<div class="logo">
+							<a href="<?php echo home_url(); ?>">
+								<h1>Chubby Quail</h1>
+								<h2>wedding films</h2>
+							</a>
+						</div>
+						<!-- /logo -->
 
-					<!-- logo -->
-					<div class="logo">
-						<a href="<?php echo home_url(); ?>">
-							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
-						</a>
-					</div>
-					<!-- /logo -->
+						<!-- nav -->
+						<nav class="nav" role="navigation">
+						</nav>
+						<!-- /nav -->
 
-					<!-- nav -->
-					<nav class="nav" role="navigation">
-					</nav>
-					<!-- /nav -->
-
-			</header>
-			<!-- /header -->
+				</header>
+				<!-- /header -->
