@@ -13,7 +13,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
-		
+		<script src="<?php echo get_template_directory_uri(); ?>/js/lib/modernizr-2.7.1.min.js"></script>
 		<?php wp_head(); ?>
 		<script>
         // conditionizr.com
@@ -26,33 +26,21 @@
 
 	</head>
 	<body <?php body_class(); ?>>
+			<div id="perspective" class="perspective effect-airbnb">
+			    <div class="container">
+			        <div class="wrapper"><!-- wrapper needed for scroll -->
+		
 
-			<!-- page-wrap for sticky footer-->
-			<div class="page-wrap">
-				<!-- wrapper -->
-				<div class="wrapper">
 				<!-- header -->
-				<header class="header clear" role="banner">
-
+				<header class="header clearfix" role="banner">
+					<div id="showMenu" class="burger-menu"></div>
 						<!-- logo -->
-						<div class="logo">
-							<a href="<?php echo home_url(); ?>">
-								<h1>Chubby Quail</h1>
-								<h2>wedding films</h2>
-							</a>
-						</div>
+						<a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/cq-logo.svg" class="logo"></a>
 						<!-- /logo -->
-
-						<!-- nav -->
-						<nav class="nav" role="navigation">
-							<ul>
-								<li>About</li>
-								<li>Packages</li>
-								<li>Blog</li>
-								<li>Contact</li>
-							</ul>
-						</nav>
-						<!-- /nav -->
-
+						
 				</header>
+				<div class="header-text">wedding films</div>
+				<div class="clearfix"></div>
+
 				<!-- /header -->
+			

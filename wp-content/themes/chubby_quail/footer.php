@@ -1,12 +1,17 @@
-					<!-- wrapper end-->	
-					</div>
-				<!-- page-wrap end-->	
-				</div>
-			<!-- footer -->
-			<footer class="site-footer" role="contentinfo">
+						<!-- footer -->
+						<footer class="site-footer" role="contentinfo">
 
-			</footer>
-			<!-- /footer -->
+						</footer>
+						<!-- /footer -->			
+			
+						<!-- wrapper end-->	
+						</div>
+					<!-- page-wrap end-->	
+					</div>
+					<nav class="outer-nav left vertical">
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'order' => 'desc' ) ); ?>
+				    </nav>
+				</div><!-- perspective wrapper -->
 		
 		<?php wp_footer(); ?>
 
@@ -22,6 +27,7 @@
 		<!-- Magnific Popup core JS file -->
 		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/magnific-popup/jquery.magnific-popup.min.js"></script>
 		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
-
+		<script src="<?php echo get_template_directory_uri(); ?>/js/classie.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/menu.js"></script>
 	</body>
 </html>
