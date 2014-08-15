@@ -45,7 +45,15 @@ body {
 	clear: both;
 	height: 0;
 }
-
+.right	{
+	float: right;
+}
+.center {
+	text-align: center;
+}
+.bottom {
+	margin-bottom: 100px;
+}
 /*sticky footer*/
 
 /*html, body {
@@ -87,7 +95,7 @@ a:active {
 }
 input:focus {
 	outline:0;
-	border:1px solid #04A4CC;
+	border:none;
 }
 
 /*------------------------------------*\
@@ -114,57 +122,99 @@ input:focus {
 .outer-nav ul li {
 	list-style: none;
 	display: block;
-	font-size: 24px;
+	font-size: 40px;
 	margin-bottom: 30px;
 	text-align: left;
 }
 
 .header {
 	width: 100%;
-	height: 150px;
-	padding: 0;
-	text-align: center;
-	top: 0;
-	left: 0;
-	background: url(img/cq-line.svg) no-repeat bottom center;;
-	background-size: 1100px;
-	z-index: 101;
+	height: auto;
+	padding:10px 0 0 10px;
+}
+.home .header {
+	position: absolute;
+	top:0;
+	padding:60px 0 0 60px;
+}
+.home .bg-img {
+	background: url(img/saltonseadriving.jpg) center center no-repeat;
+	background-size: cover;
+	max-width: 2000px;
+	height: 800px;
+	z-index: -50;
+	margin:0 auto;
 }
 .logo {
-	height: 100px;
-	width: 300px;
-	float: left;
-	margin: 50px 200px;
+	height: 70px;
+	width: 200px;
+/*	position: absolute;
+	left: 14%;
+	top: 2%;*/
 }
 .header-text {
-	font-size: 20px;
-	margin: 10px auto;
-	position: absolute;
-	left: 220px;
+	font-size: 17px;
+	padding-left: 10px;
+	/*margin: 10px auto;*/
+/*	position: absolute;
+	left: 15%;
+	top: 5%;*/
+	color: #000;
+}
+#showMenu {
+/*	position: absolute;
+	left: 14%;
+	top: 7%;*/
+}
+.burger-menu {
+  background: url(img/burger.svg) center center no-repeat;
+  background-size: 30px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+.home-text-header {
+	width: 700px;
+	font-size: 35px;
+	margin: 0 auto 30px;
+	font-weight: 500;
+	font-style: italic;
+}
+.home-text {
+	width: 700px;
+	margin: 0 auto 300px;
+	font-size: 24px;
+	line-height: 50px;
+	padding-left: 10px
 }
 .home-wrapper {
 	margin: 100px auto 0;
 	z-index: -1;
 	max-width: 1200px;
 }
+.featured-films {
+	text-align: center;
+	font-size: 30px;
+}
 .content-wrapper {
 	max-width: 500px;
 	margin: 0 auto;
+	height: 300px;
 }
 .featured {
-	font-size: 30px;
+	font-size: 40px;
 	text-align: center;
-	margin-bottom: 100px;
+	margin-bottom: 300px;
+	font-weight: 500;
+	font-style: italic;
 }
 .film {
-/*	width: 30%;
-	display: inline-block;*/
 	border-radius: 50%;
 	height: 300px;
 	vertical-align: bottom;
 	max-width: 300px;
 	text-align: center;
-	margin: 0 auto 100px;
+	margin: 100px auto 200px;
 	position: relative;
 	cursor: pointer;
 
@@ -235,6 +285,7 @@ input:focus {
 	font-size: 25px;
 	text-align: center;
 	color:white;
+	overflow: hidden;
 
 	-webkit-transition-property: top;
 	-moz-transition-property: top;
@@ -256,19 +307,23 @@ input:focus {
 .film.julie .film-title {
 	left:30%;
 }
+.film.rosie .film-title {
+	left:25%;
+}
 .film:hover .play {
 	bottom:0;
 	opacity: 1;
 	color: white;
+	visibility: visible;
 
 	-webkit-transition-property: bottom;
 	-moz-transition-property: bottom;
 	-o-transition-property: bottom;
 	transition-property: bottom;
 
-	-webkit-transition-duration: 0.5s;
-	-o-transition-duration: 0.5s;
-	transition-duration: 0.5s;
+	-webkit-transition-duration: 0.3s;
+	-o-transition-duration: 0.3s;
+	transition-duration: 0.3s;
 
 	-webkit-transition-timing-function: ease-in-out;
 	-o-transition-timing-function: ease-in-out;
@@ -281,6 +336,7 @@ input:focus {
 	width: 300px;
 	height: 300px;
 	bottom: -300px;
+	visibility: hidden;
 
 	-webkit-transition-property: bottom;
 	-moz-transition-property: bottom;
@@ -307,6 +363,10 @@ input:focus {
 	background:url(img/lindsay.png) center center no-repeat;
 	background-size: 300px;
 }
+.rosie {
+	background:url(img/rosie.png) center center no-repeat;
+	background-size: 300px;
+}
 .julie {
 	background:url(img/julie.png) center center no-repeat;
 	background-size: 300px;
@@ -315,14 +375,55 @@ input:focus {
 /*------------------------------------*\
 	ABOUT PAGE
 \*------------------------------------*/
+.about-wrapper {
+	width: 1000px;
+	margin: 50px auto;
+	height: 300px;
+}
 .about-me {
 	width: 200px;
 	float: left;
 }
 .about-text {
 	float: left;
-	width: 300px;
-	font-size: 18px;
+	width: 600px;
+	font-size: 22px;
+	margin-right: 20px;
+}
+.about-text p {
+	margin-bottom: 10px;
+}
+/*------------------------------------*\
+	SERVICES PAGE
+\*------------------------------------*/
+.packages-wrapper {
+	width: 1000px;
+	margin:0 auto;
+}
+.col {
+	width: 30%;
+	float: left;
+	vertical-align: top;
+}
+.price {
+	width: 100px;
+	height: 100px;
+	background: rgba(0,0,0,0.3);
+	vertical-align: top;
+	border-radius: 50%;
+	font-size: 30px;
+	padding-top: 30px;
+	text-align: center;
+	margin: 20px auto;
+}
+.package {
+	text-align: center;
+	font-style: italic;
+	font-size: 20px;
+	font-weight: 500;
+}
+.details ul li {
+	font-size: 20px;
 }
 /*------------------------------------*\
 	CONTACT PAGE
@@ -333,6 +434,30 @@ input:focus {
 }
 .contact-form p {
 	font-size: 24px;
+}
+.contact-header {
+	text-align: center;
+	font-size: 40px;
+}
+form, input, textarea {
+	width: 600px;
+	margin:0 auto;
+}
+form {
+	margin-top: 40px;
+}
+input {
+	height: 50px;
+	font-size: 30px;
+}
+form > p {
+	margin-bottom: 40px;
+	font-size: 20px;
+}
+input:focus
+{ 
+	background-color:rgba(0,0,0,0.2);
+	color: #000;
 }
 /*------------------------------------*\
 	BLOG PAGE
@@ -356,17 +481,22 @@ input:focus {
 	Footer
 \*------------------------------------*/
 .site-footer {
-	background:url(img/footer-splat.svg) bottom center no-repeat;;
-	background-size: 1000px;
+	background:url(img/cq-line.svg) bottom center no-repeat;;
+	background-size: 1100px;
 	width: 100%;
-	height: 20px;
-	margin-bottom: 60px;
+	height: 100px;
 	bottom: 0;
 }
 .splats {
 	width: 100%;
 	margin: -400px auto -300px;
 	z-index: -2;
+}
+.tel {
+	text-align: center;
+	font-size: 18px;
+	bottom: 0;
+	margin: 20px auto 60px;
 }
 /*------------------------------------*\
 	TYPOGRAPHY
@@ -415,18 +545,18 @@ input:focus {
 \*------------------------------------*/
 
 ::selection {
-	background:#04A4CC;
-	color:#FFF;
+/*	background:#04A4CC;
+*/	color:#FFF;
 	text-shadow:none;
 }
 ::-webkit-selection {
-	background:#04A4CC;
-	color:#FFF;
+/*	background:#04A4CC;
+*/	color:#FFF;
 	text-shadow:none;
 }
 ::-moz-selection {
-	background:#04A4CC;
-	color:#FFF;
+/*	background:#04A4CC;
+*/	color:#FFF;
 	text-shadow:none;
 }
 
@@ -514,18 +644,6 @@ a img.aligncenter {
 html, body, .perspective {
 	width: 100%;
 	height: 100%;
-}
-#showMenu {
-	position: absolute;
-	left: 200px;
-	top:200px;
-}
-.burger-menu {
-  background: url(img/burger.svg) center center no-repeat;
-  background-size: 30px;
-  width: 60px;
-  height: 60px;
-  cursor: pointer;
 }
 
 .perspective {

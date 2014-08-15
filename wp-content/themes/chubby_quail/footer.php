@@ -1,7 +1,8 @@
 						<!-- footer -->
 						<footer class="site-footer" role="contentinfo">
-
 						</footer>
+						<div class="tel">t: 626.430.0141 | e: info@chubbyquail.com</div>
+
 						<!-- /footer -->			
 			
 						<!-- wrapper end-->	

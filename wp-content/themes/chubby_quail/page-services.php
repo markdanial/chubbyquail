@@ -8,10 +8,44 @@ get_header(); ?>
 
 	<main role="main">
 		<!-- section -->
-		<section class="content-wrapper">
-			<div class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste molestias, dolorum tempore, nemo consectetur officia! Excepturi autem possimus, repellendus cumque, voluptatem ad expedita illum blanditiis 
-			totam quos temporibus molestiae, ab.</div>
-			<div class="clearfix"></div>
+		<section class="packages-wrapper">
+			<div class="col">
+				<div class="package">Baby Bird</div>
+				<div class="details">
+					<ul>
+						<li>6 hours coverage</li>
+						<li>1 shooter</li>
+						<li>3-5 minute highlight trailer</li>
+						<li>All raw footage</li>
+					</ul>
+					<div class="price">$1800</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="package">Big Bird</div>
+				<div class="details">
+					<ul>
+						<li>8 hours coverage</li>
+						<li>2 shooters</li>
+						<li>10-12 minute feature film</li>
+						<li>All raw footage</li>
+					</ul>
+					<div class="price">$2400</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="package">Chubby Quail</div>
+				<div class="details">
+					<ul>
+						<li>10 hours coverage</li>
+						<li>2 shooters</li>
+						<li>3-5 minute highlight trailer</li>
+						<li>16-20 minute feature film</li>
+						<li>All raw footage</li>
+					</ul>
+					<div class="price">$3000</div>
+				</div>
+			</div>
 		</section>
 		<div class="clearfix"></div>
 		<!-- /section -->

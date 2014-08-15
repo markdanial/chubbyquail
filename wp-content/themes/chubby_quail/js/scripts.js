@@ -22,6 +22,14 @@
 		      }
 		    ]
 		});
+		$('.rosie').magnificPopup({
+		    items: [
+		      {
+		        src: 'http://vimeo.com/103440166',
+		        type: 'iframe' // this overrides default type
+		      }
+		    ]
+		});
 		$('.julie').magnificPopup({
 		    items: [
 		      {
