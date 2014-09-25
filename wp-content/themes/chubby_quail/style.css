@@ -13,6 +13,8 @@
     MAIN
 \*------------------------------------*/
 
+
+
 /* global box-sizing */
 *,
 *:after,
@@ -138,7 +140,7 @@ input:focus {
 	padding:60px 0 0 60px;
 }
 .home .bg-img {
-	background: url(img/saltonseadriving.jpg) center center no-repeat;
+	background-position: center center;
 	background-size: cover;
 	max-width: 2000px;
 	height: 800px;
@@ -204,9 +206,8 @@ input:focus {
 .featured {
 	font-size: 40px;
 	text-align: center;
-	margin-bottom: 300px;
+	margin-bottom: 200px;
 	font-weight: 500;
-	font-style: italic;
 }
 .film {
 	border-radius: 50%;
@@ -382,7 +383,7 @@ input:focus {
 }
 .about-me {
 	width: 200px;
-	float: left;
+	float: right;
 }
 .about-text {
 	float: left;
@@ -406,25 +407,115 @@ input:focus {
 	vertical-align: top;
 }
 .price {
-	width: 100px;
-	height: 100px;
-	background: rgba(0,0,0,0.3);
-	vertical-align: top;
-	border-radius: 50%;
-	font-size: 30px;
-	padding-top: 30px;
+	font-size: 20px;
+	font-style: italic;
+	padding: 5px 0;
 	text-align: center;
-	margin: 20px auto;
+	padding: 0 0 15px 0;
+	margin: 0 15px 10px;
+	border-bottom: 1px solid #d9d9d9;
 }
 .package {
 	text-align: center;
-	font-style: italic;
-	font-size: 20px;
+	font-size: 24px;
 	font-weight: 500;
+}
+ul {
+	-webkit-padding-start: 0;
 }
 .details ul li {
 	font-size: 20px;
+	list-style: none;
+	text-align: center;
+	padding: 5px 0;
 }
+.details ul li:last-child {
+	border-bottom: 1px solid #d9d9d9;
+	padding-bottom: 20px;
+}
+.slice {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+.slice-row {
+	display: table-row;
+} 
+.slice-auto {
+    table-layout: auto;
+}
+ 
+.slice-item {
+    display: table-cell;
+    vertical-align: top;
+    /*background: #f7f7f7;*/
+}
+
+
+// layouts
+
+.l-header {
+  background: #222;
+  color: white;
+}
+
+.l-header-logo { 
+  width: 120px;
+}
+
+.l-header-menu { 
+  vertical-align: middle;
+  text-align: right;
+  padding: 0 20px;
+}
+
+
+.l-account {
+  /*border-spacing: 20px;*/
+  padding: 20px 0;
+  margin-bottom: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.l-account-settings {
+  width: 75%;
+}
+
+
+@media all and (max-width: 600px) { 
+  .l-mediaquery {
+    & > .slice-item { display: table-row; }
+  }
+}
+
+
+// modules
+.logo {
+  display: block;
+  padding: 20px;
+  background: #333;
+}
+
+.menu {  
+  & > li { display: inline-block; }
+}
+
+.usercard {
+  display: block;
+  min-width: 180px;
+  padding: 20px;
+  
+  background: #222;
+  color: white;
+}
+
+.block {
+  min-height: 100px;
+  padding: 80px;
+}
+
+.block-alt { background-color: #777; }
 /*------------------------------------*\
 	CONTACT PAGE
 \*------------------------------------*/
@@ -458,6 +549,13 @@ input:focus
 { 
 	background-color:rgba(0,0,0,0.2);
 	color: #000;
+}
+div.wpcf7-mail-sent-ok {
+	border: 2px solid #398f14;
+	font-size: 24px;
+}
+div.wpcf7-response-output {
+ margin: 0;
 }
 /*------------------------------------*\
 	BLOG PAGE
@@ -503,13 +601,19 @@ input:focus
 \*------------------------------------*/
 
 @font-face {
-	font-family:'Font-Name';
-	src:url('fonts/font-name.eot');
-	src:url('fonts/font-name.eot?#iefix') format('embedded-opentype'),
-		url('fonts/font-name.woff') format('woff'),
-		url('fonts/font-name.ttf') format('truetype'),
-		url('fonts/font-name.svg#font-name') format('svg');
-    font-weight:normal;
+	font-family:'archer';
+	src:url('fonts/Archer-Light-Pro.otf');
+    font-weight:300;
+    font-style:normal;
+
+    font-family:'archer';
+	src:url('fonts/Archer-Thin-Pro.otf');
+    font-weight:200;
+    font-style:normal;
+
+    font-family:'archer';
+	src:url('fonts/Archer-Medium-Pro.otf');
+    font-weight:500;
     font-style:normal;
 }
 
@@ -1293,4 +1397,99 @@ html, body, .perspective {
 		margin-bottom: 20px;
 	}
 }
+@media screen and (max-width:1140px) {
 
+	.splats {
+		margin: 0;
+	}
+	img.lines {
+		display: none;
+	}
+
+	.film:hover .overlay {
+		opacity: 1;
+	}
+	.overlay {
+		display: none;
+	}
+
+	.film-title {
+		top:50%;
+		left: 20%;
+		position: relative;
+		font-size: 25px;
+		text-align: center;
+		color:white;
+		overflow: visible;
+	}
+	.film.julie .film-title {
+		left:30%;
+	}
+	.film.rosie .film-title {
+		left:25%;
+	}
+	.film:hover .play {
+		bottom:auto;
+	}
+	.play {
+		background: url(img/play.svg) 50% 45% no-repeat;
+		background-size: 60px;
+		position: relative;
+		width: 300px;
+		height: 300px;
+		bottom: auto;
+		visibility: visible;
+
+	}
+	.about-wrapper {
+		width: 100%;
+		margin: 50px auto;
+		height: auto;
+		padding:0 10px; 
+	}
+	.about-text {
+		float: left;
+		width: 100%;
+		font-size: 22px;
+		margin-right: 0;
+	}
+	.about-me {
+		width: 200px;
+		float: left;
+	}
+	.site-footer {
+		background-size: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.home .bg-img {
+		max-width: 100%;
+		height: 400px;
+	}
+	.home .header {
+		top: 0;
+		padding: 0;
+	}
+	.featured {
+		font-size: 40px;
+		text-align: center;
+		margin-bottom: 40px;
+		font-weight: 500;
+	}
+	.tel {
+		padding: 10px;
+		font-size: 14px;
+	}
+		.slice-item {
+		display: block;
+	}
+	.l-account-settings {
+		width: 100%;
+	}
+	form, input, textarea {
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 10px;
+	}
+}

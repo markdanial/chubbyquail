@@ -9,13 +9,6 @@ get_header(); ?>
 	<main role="main">
 		<!-- section -->
 		<section class="home-wrapper">
-			<div class="home-text-header">Congratulations on your upcoming wedding</div>
-			<div class="home-text">
-			<p>My goal as a film maker is to ensure your day is recorded with authenticity and beauty.
-			It's a privilege to tell stories that evoke emotion and capture moments that can be treasured forever.</p> 
-			<p>I look forward to working with you to create something special.</p>
-			 <p>-Mark</p>	
-			</div>
 			<div class="featured">Featured Films</div>
 			<div class="film clare">
 				<div class="play"></div>

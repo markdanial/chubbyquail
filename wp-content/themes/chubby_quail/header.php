@@ -14,6 +14,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 		<script src="<?php echo get_template_directory_uri(); ?>/js/lib/modernizr-2.7.1.min.js"></script>
+		
 		<?php wp_head(); ?>
 		<script>
         // conditionizr.com
@@ -31,8 +32,8 @@
 			        <div class="wrapper"><!-- wrapper needed for scroll -->
 		
 				<!-- header -->
-									<div class="bg-img"></div>
-
+									<!-- <div class="bg-img"></div> -->
+						<div id="header-vid" class="bg-img" data-vide-bg="<?php echo get_template_directory_uri(); ?>/img/video/grass" data-vide-options="loop: true, muted: true, position: 0% 0%"></div>
 				<header class="header clearfix" role="banner">
 					<a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/cq-logo.svg" class="logo"></a>
 					<div class="header-text">cinematic wedding films</div>

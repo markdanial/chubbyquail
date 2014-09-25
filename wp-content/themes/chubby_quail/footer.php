@@ -1,7 +1,7 @@
 						<!-- footer -->
 						<footer class="site-footer" role="contentinfo">
 						</footer>
-						<div class="tel">t: 626.430.0141 | e: info@chubbyquail.com</div>
+						<div class="tel">t: 626.430.0141 | e: <a href="mailto:info@chubbyquail.com">info@chubbyquail.com</a> | San Francisco, CA</div>
 
 						<!-- /footer -->			
 			
@@ -30,5 +30,6 @@
 		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/classie.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/menu.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.vide.min.js"></script>
 	</body>
 </html>
