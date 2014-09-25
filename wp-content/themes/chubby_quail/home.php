@@ -9,11 +9,20 @@ get_header(); ?>
 	<main role="main">
 		<!-- section -->
 		<section class="home-wrapper">
-			<div class="featured">Featured Films</div>
+			<div class="featured" id="featured">Featured Films</div>
 			<div class="film clare">
 				<div class="play"></div>
 				<div class="overlay">
 					<div class="film-title">Clare &amp; Jonathan</div>
+				</div>
+			</div>
+			<div class="splats">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/splats.svg" alt="">
+			</div>
+			<div class="film hollen">
+				<div class="play"></div>
+				<div class="overlay">
+					<div class="film-title">Hollen &amp; Uri</div>
 				</div>
 			</div>
 			<div class="splats">

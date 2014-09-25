@@ -18,7 +18,9 @@ get_header(); ?>
 							<ul>
 								<li>8 hours coverage</li>
 								<li>1 shooter</li>
+								<li>2 HD cameras</li>
 								<li>3-5 minute highlight trailer</li>
+								<li>All raw footage</li>
 							</ul>
 						</div>
 				  </div>
@@ -26,12 +28,14 @@ get_header(); ?>
 				<div class="slice-item">
 				  <div class="block">
 					<div class="package">Big Bird</div>
-					<div class="price">$2200</div>
+					<div class="price">$2400</div>
 						<div class="details">
 							<ul>
 								<li>10 hours coverage</li>
-								<li>2 shooters</li>
+								<li>1 shooter</li>
+								<li>2 HD cameras</li>
 								<li>10-12 minute feature film</li>
+								<li>All raw footage</li>
 							</ul>
 						</div>
 				  </div>
@@ -39,13 +43,14 @@ get_header(); ?>
 				<div class="slice-item">
 				  <div class="block">
 					<div class="package">Chubby Quail</div>
-					<div class="price">$2800</div>
+					<div class="price">$3000</div>
 						<div class="details">
 							<ul>
-								<li>10 hour coverage</li>
+								<li>Complete event coverage</li>
 								<li>2 shooters</li>
 								<li>3-5 minute highlight trailer</li>
 								<li>16-20 minute feature film</li>
+								<li>All raw footage</li>
 							</ul>
 						</div>
 				  </div>
@@ -55,7 +60,7 @@ get_header(); ?>
 		
 		<!-- slice item width pays attention to content width -->
 		<div class="slice slice-auto l-account">
-		  <div class="slice-item l-account-settings"><div class="settings">Beyond the packages listed above, our services can generally be tailored to meet your needs. Email or call to find out more.</div></div>
+		  <div class="slice-item l-account-settings"><div class="settings">*Complete ceremony + toasts edited film can be added to any package for an additional $500.<br>Beyond the packages listed above, our services can generally be tailored to meet your needs. Email or call to find out more.</div></div>
 		</div>
 
 <?php get_footer(); ?>
