@@ -5,7 +5,8 @@
  */
 
 get_header(); ?>
-
+	
+	<?php include_once("analyticstracking.php") ?>
 	<main role="main">
 		<!-- section -->
 		<section class="home-wrapper">

@@ -41,7 +41,7 @@
 								  <svg>
 								    <rect x="0" y="0" fill="none" width="166" height="45"/>
 								  </svg>
-								  featured films
+								  View Films
 								</div>
 							</div>	
 						</div>

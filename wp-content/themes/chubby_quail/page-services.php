@@ -6,7 +6,7 @@
 
 get_header(); ?>
 
-
+	<?php include_once("analyticstracking.php") ?>
 		<!-- slice with media query (columns turn to rows under 600px) --> 
 		<div class="slice l-mediaquery">
 			<div class="slice-row">

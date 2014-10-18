@@ -169,6 +169,7 @@ input:focus {
 	text-align: center;
 	font-size: 30px;
 }
+.book-now
 .content-wrapper {
 	max-width: 500px;
 	margin: 0 auto;
@@ -682,13 +683,16 @@ a img.aligncenter {
   display: inline-block;
   width: 166px;
   height: 45px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 45px;
   text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
+  color: #000;
   cursor: pointer;
   overflow: hidden;
+  margin:0 auto;
+}
+.btn.book {
+	display: block;
 }
 .btn svg {
   position: absolute;
@@ -696,7 +700,7 @@ a img.aligncenter {
 }
 .btn svg rect {
   fill: none;
-  stroke: #ffffff;
+  stroke: #3f3f3f;
   stroke-width: 6;
   stroke-dasharray: 422, 0;
   

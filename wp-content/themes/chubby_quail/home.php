@@ -5,11 +5,11 @@
  */
 
 get_header(); ?>
-
+	<?php include_once("analyticstracking.php") ?>
 	<main role="main">
 		<!-- section -->
 		<section class="home-wrapper">
-			<div class="featured" id="featured">Featured Films</div>
+			<div class="featured" id="featured">Highlight Films</div>
 			<div class="film clare">
 				<div class="play"></div>
 				<div class="overlay">
@@ -52,7 +52,7 @@ get_header(); ?>
 					<div class="film-title">Julie &amp; Joe</div>
 				</div>
 			</div>
-
+			
 		</section>
 		<!-- /section -->
 	</main>
